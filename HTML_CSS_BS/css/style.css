@@ -1,0 +1,265 @@
+/*import font*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+/*reset*/
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #fff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Background */
+.hero_area {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+Header
+*/
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10vw;
+}
+
+.menu-item,
+.icon-item {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-link,
+.icon-item {
+    margin-left: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.home {
+    color: #ffc107;
+}
+.menu-item,
+.icon-item:hover{
+    color:#ffc107;
+}
+/* Order button */
+.button.button--outline {
+    background-color: #ffc107;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*Hover button*/
+.button.button--outline:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+/*Content*/
+.detail-box {
+    text-align: left;
+    width: 800px;
+    color: #fff;
+    position: absolute;
+    top: 23%;
+    margin-left: 10%;
+    z-index: 1;
+}
+
+.detail-box h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.detail-box pre{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.detail-box .btn-box {
+    margin-top: 30px;
+}
+
+.detail-box a.btn1 {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #ffbe33;
+    color: #fff;
+    border-radius: 45px;
+    text-decoration: none;
+}
+
+/*Hover cho btn1 */
+.detail-box a.btn1:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+/*dots*/
+.dots {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 20%;
+    left: 13%;
+    transform: translateX(-50%);
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    animation: dot-pulse 1s infinite;
+}
+.dots .dots-set {
+    width: 20px;
+    height: 20px;
+    background-color: #ff9900;
+}
+
+/*Animation cho dots*/
+@keyframes dot-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/*
+About
+*/
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*About image*/
+.about_section {
+    background: #222831;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+.about-img-box img {
+    width: 100%;
+    max-width: 445px;
+    margin-left: 3vw;
+}
+/*About content*/
+.about-detail-box {
+    text-align: left;
+    max-width: 550px;
+    color: #ffffff;
+    margin-left: 5vw;
+    font-size: 16px;
+}
+
+.about-detail-box h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.about-detail-box p {
+    margin-top: 15px;
+}
+
+.about-detail-box a {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #ffbe33;
+    color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.about-detail-box a:hover {
+    background-color: #e69c00;
+    transform: scale(1.05);
+}
